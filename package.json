@@ -13,6 +13,8 @@
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
+    "arc": "^0.1.4",
+    "j": "^1.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },

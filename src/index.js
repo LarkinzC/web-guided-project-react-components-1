@@ -1,5 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
+import Playground from './components/Playground'
 
 /*
 💥💥💥 Rules when DECLARING a React component 💥💥💥
@@ -24,12 +25,15 @@ import { render } from 'react-dom'
 function App(props) {
   return (
     <div className='container'>
-      <h1>Welcome to React, {props.track} rockstars!!</h1>
+      <h1>Welcome to React, {props.track} chillers!!</h1>
+      <h2>Student Name: {props.name}, age: {props.age}</h2>
+      <h2>Are you happy? {props.happy}</h2>
+      <Playground />
     </div>
   )
 }
 
 render(
-  <App track='Web' />,
+  <App track='Web' name='Larkin' age='20' happy='NO' />,
   document.querySelector('#root')
 )
